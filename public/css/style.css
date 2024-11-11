@@ -1,0 +1,208 @@
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("{{asset('images/hotel.webp')}}")
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Veg and Non-Veg Gallery Styling */
+#menu-gallery .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#menu-gallery .gallery p {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+#menu-gallery .gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.veg-gallery {
+    background-color: #f0fff0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.non-veg-gallery {
+    background-color: #fff0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Chef Gallery Styling */
+#chefs-gallery .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#chefs-gallery .gallery p {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+#chefs-gallery .gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Table Booking Cards */
+.booking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.card {
+    width: 250px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #menu-gallery .gallery p, #chefs-gallery .gallery p, .card {
+        width: 100%;
+    }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.card-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio without stretching */
+}
+
+
+
+
+/* Basic styles for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute the logo and links */
+    align-items: center; /* Align the items vertically */
+    padding: 10px 20px; /* Add some padding around the nav */
+    background-color: #333; /* Background color of the nav */
+}
+
+/* Style for the logo */
+nav .logo img {
+    height: 40px; /* Adjust the logo size */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+/* Style for the navigation links */
+nav a {
+    color: white; /* Text color for the links */
+    text-decoration: none; /* Remove underline from the links */
+    padding: 10px 15px; /* Add some padding around the links */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Hover effect for links */
+nav a:hover {
+    background-color: #555; /* Add a background color on hover */
+}
+  
+
+
+
+
+/* About Section Styles */
+.about-section {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    border-radius: 8px; /* Optional: rounded corners for the section */
+    margin-top: 20px; /* Space above the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect for a nice look */
+}
+
+.about-section h2 {
+    font-size: 2.5rem; /* Larger font for the heading */
+    color: #333; /* Dark gray color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    color: #666; /* Light gray text color */
+    line-height: 1.6; /* Better line spacing for readability */
+    max-width: 800px; /* Limit width of text for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Optional: Styling for the section when hovered (if you want to add interactivity) */
+.about-section:hover {
+    background-color: #e2e2e2; /* Change background on hover */
+}
