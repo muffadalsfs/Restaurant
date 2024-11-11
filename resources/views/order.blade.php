@@ -5,7 +5,7 @@
 <h3>Order Summary</h3>
 <h3><a href="/customers">Book New</a></h3>
 <ul class="order-list">
-    @foreach($order as $item)
+    @foreach($orders as $item)
 
         <li class="order-item">
             <!-- Static Image on the left side -->
